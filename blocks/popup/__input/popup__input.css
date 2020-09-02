@@ -1,0 +1,22 @@
+.popup__input {
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0 , 0, 0.2);
+    font-family: Inter, Arial, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    padding-bottom: 9px;
+    width: 100%;
+}
+
+.popup__input:focus {
+    outline: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.popup__input:nth-last-of-type(1) {
+    margin-top: 29px;
+}
+

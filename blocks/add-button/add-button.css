@@ -1,0 +1,27 @@
+.add-button {
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    height: 50px;
+    width: 150px;
+    margin-left: auto;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-image: url("../../images/vector_plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    opacity: 0.6;
+}
+
+@media (max-width: 700px) {
+    .add-button {
+        height: 50px;
+        width: 282px;
+        margin: 36px auto 0;
+    }
+}

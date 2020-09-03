@@ -1,5 +1,5 @@
 .element__title {
-    font-family: Inter, Arial, serif;
+    font-family: Inter, Arial, sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 24px;
@@ -9,4 +9,5 @@
     text-overflow: ellipsis; /* Добавляем многоточие */
     white-space: nowrap; /* Запрещаем перенос строк */
     overflow: hidden; /* Обрезаем все, что не помещается в область */
+
 }

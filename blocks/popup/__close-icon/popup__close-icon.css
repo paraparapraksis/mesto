@@ -1,7 +1,16 @@
 .popup__close-icon {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    background-position: center;
+    background-image: url("../../../images/close_icon.svg");
+    height: 40px;
+    width: 40px;
     position: absolute;
-    top: -47px;
-    right: -47px;
+    top: -37px;
+    right: -37px;
     cursor: pointer;
 }
 
@@ -11,9 +20,10 @@
 
 @media (max-width: 600px) {
     .popup__close-icon {
-        width: 27px;
-        height: 27px;
-        top: -20px;
-        right: -20px;
+        background-size: cover;
+        width: 35px;
+        height: 35px;
+        top: -25px;
+        right: -25px;
     }
 }

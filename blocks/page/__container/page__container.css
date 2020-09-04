@@ -8,12 +8,12 @@
     .page__container {
         padding-right: 19px;
         padding-left: 19px;
+        padding-bottom: 36px;
     }
 }
 
 @media (max-width: 320px) {
     .page__container {
         padding-top: 28px;
-        padding-bottom: 36px;
     }
 }

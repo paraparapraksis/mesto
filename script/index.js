@@ -16,36 +16,31 @@ const profileEditButton = document.querySelector('.profile-info__edit-button');
 //обращаемся к кнопке закрытия попапа
 const closeIcon = document.querySelector('.popup__close-icon');
 
-
+//закрываем попап
 function closePopup() {
     popupOverlay.classList.remove('popup_opened');
 }
 
-//закрываем попап
 //добавлен слушатель
-closeIcon.addEventListener('click', function () {
-    closePopup();
-})
+closeIcon.addEventListener('click', closePopup);
 
-//открываем попап
-//добавляем слушатель
-profileEditButton.addEventListener('click', function () {
+//объявляем функцию открытия попапа
+function openPopup () {
     popupOverlay.classList.add('popup_opened');
-})
 
-//заполняем поля попапа
-if (profileTitle.textContent) {
+    //заполняем инпуты
     popupInputTitle.value = profileTitle.textContent;
-}
-if (profileSubtitle.textContent) {
     popupInputSubtitle.value = profileSubtitle.textContent;
 }
 
-//функция отправки формы
-form.addEventListener('submit', function (event) {
+//добавляем слушатель
+profileEditButton.addEventListener('click', openPopup);
+
+//объявляем функцию сохранения полей
+function formSubmitHandler (evt) {
 
     //отправляем действие по умолчанию
-    event.preventDefault();
+    evt.preventDefault();
 
     //сохраняем значение полей
     profileTitle.textContent = popupInputTitle.value;
@@ -53,7 +48,7 @@ form.addEventListener('submit', function (event) {
 
     //закрываем попап
     closePopup();
-})
+}
 
-
-
+//слушатель
+form.addEventListener('submit', formSubmitHandler);

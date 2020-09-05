@@ -25,7 +25,7 @@ function closePopup() {
 closeIcon.addEventListener('click', closePopup);
 
 //объявляем функцию открытия попапа
-function openPopup () {
+function openPopup() {
     popupOverlay.classList.add('popup_opened');
 
     //заполняем инпуты
@@ -37,7 +37,7 @@ function openPopup () {
 profileEditButton.addEventListener('click', openPopup);
 
 //объявляем функцию сохранения полей
-function formSubmitHandler (evt) {
+function formSubmitHandler(evt) {
 
     //отправляем действие по умолчанию
     evt.preventDefault();
